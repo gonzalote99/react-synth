@@ -1,0 +1,91 @@
+.Sequence {
+  display: inline-block; }
+
+.ButtonBox {
+  margin-top: 10%;
+  margin-bottom: 20%; }
+
+.Button {
+  border: #3e3e3e 1px solid;
+  display: inline-block;
+  margin: 4px;
+  width: 3em;
+  height: 3em;
+  border-radius: 3em;
+  color: #3e3e3e;
+  background: white;
+  cursor: pointer;
+  transition: 1s cubic-bezier(0, 1, 0, 1); }
+  @media (max-width: 480px) {
+    .Button {
+      width: 5em;
+      height: 5em;
+      border-radius: 1em; }
+      .Button:hover, .Button:active {
+        border: #ff6060 1px solid;
+        background: #ff6060; } }
+
+.Black {
+  border: white 1px solid;
+  color: white;
+  background: #3e3e3e; }
+
+.Pressed {
+  border: #ff6060 1px solid;
+  background: #ff6060;
+  transform: translate(0, 3em); }
+
+.MousePressed {
+  border: #ff6060 1px solid;
+  background: #ff6060; }
+
+.Separator {
+  border: 1px #313131 solid;
+  margin: 30px; }
+
+.OctaveControl {
+  font-size: 17pt;
+  display: inline-block;
+  width: 2em;
+  margin: 10px;
+  cursor: pointer; }
+
+.PushButton {
+  display: inline-block;
+  padding: 1em 2em;
+  margin: 0.5em;
+  cursor: pointer;
+  border-radius: 0.2em;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.22);
+  transition: 0.3s;
+  user-select: none;
+  cursor: pointer; }
+  @media (max-width: 480px) {
+    .PushButton {
+      border-radius: 1em; } }
+  .PushButton img {
+    width: 14px; }
+  @media (min-width: 480px) {
+    .PushButton:hover {
+      background: #585858; } }
+
+.ActivePushButton {
+  background: #ff6060;
+  transform: translateY(2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0px -1px 0 rgba(0, 0, 0, 0.22); }
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 10px 0;
+  width: 100%;
+  background-color: #3e3e3e;
+  color: white;
+  text-align: center; }
+  footer img {
+    width: 20px; }
+  footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; }
